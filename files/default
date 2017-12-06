@@ -1,0 +1,7 @@
+<VirtualHost *:80>
+        DocumentRoot /var/www
+        ProxyPass                /     ajp://localhost:8009/ retry=0 ttl=600
+        ProxyPassReverse         /     ajp://localhost:8009/
+        ProxyPass               /*     ajp://localhost:8009/* retry=0 ttl=600
+        ProxyPassReverse        /*     ajp://localhost:8009/*
+</VirtualHost>
