@@ -11,7 +11,7 @@ have your aws access keys ready in ~/.boto or ~/.aws/credentials file or even in
 These playbooks deploy a very basic implementation of Tomcat Application Server,
 version 8. Edit the group_vars/tomcat-servers file to set any Tomcat configuration parameters you need.
 
-This playbook contain 6 sections 
+This playbook contain 9 sections 
 
 1) Check your current IP and keep the value in my_ip var
 2) Create the simple security group and whitelist your IP for accessing instances for port 80 and 22
